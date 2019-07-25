@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
 class ToDoList extends Component {
     render() {
@@ -7,3 +7,5 @@ class ToDoList extends Component {
         )
     }
 }
+
+export default ToDoList;

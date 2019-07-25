@@ -1,15 +1,15 @@
-import React, { Component, Fragment } from "react";
-import Header from "Header";
-import ToDoList from "ToDoList";
+import React from "react";
+import Header from "./Header";
+import ToDoList from "./ToDoList";
 
-class App extends Component {
-    return() {
-        render(
+class App extends React.Component {
+    render() {
+        return (
             <div className="container">
                 <Header />
                 <ToDoList />
             </div>
-        )
+        );
     }
 }
 

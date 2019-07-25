@@ -22,5 +22,9 @@
         "not dead",
         "not ie <= 11",
         "not op_mini all"
-    ]
+    ],
+    "dependencies": {
+        "npm-check": "^5.9.0",
+        "npm-check-updates": "^3.1.20"
+    }
 }
