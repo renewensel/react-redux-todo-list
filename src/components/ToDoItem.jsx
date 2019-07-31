@@ -28,10 +28,10 @@ class ToDoItem extends React.Component {
                             htmlFor={`todo-done-${todo.uuid}`}
                         >
                             &nbsp;
-            </label>
+                        </label>
                     </div>
                 </td>
-                <td className="col-1">
+                <td className="col">
                     <input
                         type="text"
                         className="form-control"

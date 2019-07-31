@@ -31,3 +31,5 @@ class ToDoFilter extends React.Component {
         );
     }
 }
+
+export default ToDoFilter;

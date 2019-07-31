@@ -31,7 +31,7 @@ class ToDoForm extends React.Component {
                 <div className="input-group-append">
                     <button className="btn btn-outline-secondary" type="submit">
                         <i className="fas fa-plus" aria-hidden="true" />&nbsp;Add item
-          </button>
+                </button>
                 </div>
             </form>
         );

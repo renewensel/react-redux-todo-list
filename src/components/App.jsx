@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import ToDoForm from "./ToDoForm";
 import ToDoList from "./ToDoList";
+import ToDoFilter from "./ToDoFilter";
 import uuid from "uuid/v4";
 import Storage from "../modules/Storage";
 
@@ -63,13 +64,25 @@ class App extends React.Component {
         });
     };
 
+    setFilter = filter => {
+        this.setState(state => {
+            state.filter = filter;
+            return state;
+        });
+    };
+
     render() {
         return (
             <div className="container">
                 <Header tagline="Here are all the next tasks." />
                 <ToDoForm addToDo={this.addToDo} />
+                <ToDoFilter
+                    activeFilter={this.state.filter}
+                    setFilter={this.setFilter}
+                />
                 <ToDoList
                     items={this.state.toDoItems}
+                    filter={this.state.filter}
                     updateToDoText={this.updateToDoText}
                     toggleToDoDone={this.toggleToDoDone}
                     removeToDo={this.removeToDo}
