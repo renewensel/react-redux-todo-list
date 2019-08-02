@@ -1,7 +1,7 @@
 Todo List using React &amp; localStorage
 ===
 
-## 1.1 Installing packages
+## 1 Installing packages
 
 We use [npm](https://www.npmjs.com/) to install all needed packages for our project.
 
@@ -9,7 +9,7 @@ We use [npm](https://www.npmjs.com/) to install all needed packages for our proj
 npm install
 ```
 
-## 1.2 Starting the application
+## 2 Starting the application
 
 Run the following command to run the todo list application.
 
@@ -17,7 +17,15 @@ Run the following command to run the todo list application.
 npm start
 ```
 
+## 3 Starting the application
 
-## Append
+Run the following command to build the todo list application.
+
+```bash
+npm build
+```
+
+
+## Appendix
 
 The todo list is using your browsers localStorage. At a later step Redux will be implemented.
