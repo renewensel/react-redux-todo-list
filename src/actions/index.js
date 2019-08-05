@@ -26,13 +26,13 @@ export const filters = {
 
 
 /*
-* Action creators
-*/
+ * Action creators
+ */
 
 // Filter
 
 export const setFilter = filter => {
-    return { type: ADD_TODO, text };
+    return { type: SET_FILTER, filter };
 };
 
 // Todo items
@@ -41,7 +41,7 @@ export const addToDo = text => {
     return { type: ADD_TODO, text };
 };
 
-export const updateToDo = (uuid, text) => {
+export const updateToDoText = (uuid, text) => {
     return { type: UPDATE_TODO_TEXT, uuid, text };
 };
 
@@ -52,5 +52,3 @@ export const removeToDo = uuid => {
 export const toggleToDo = uuid => {
     return { type: TOGGLE_TODO, uuid };
 };
-
-
