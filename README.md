@@ -24,8 +24,3 @@ Run the following command to build the todo list application.
 ```bash
 npm build
 ```
-
-
-## Appendix
-
-The todo list is using your browsers localStorage. At a later step Redux will be implemented.
